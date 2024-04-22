@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/no-misused-promises */
 import express from 'express'
 
-// import taskController from '../infrastructure/taskController'
-import TaskController from '../infrastructure/task-controller'
-import TaskList from '../application/task-service'
+import TaskController from '../infrastructure/taskController'
+import TaskList from '../application/taskService'
 
 const taskService = new TaskList()
 const taskController = new TaskController(taskService)

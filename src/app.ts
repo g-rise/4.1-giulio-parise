@@ -1,9 +1,9 @@
-import express from 'express' // middleware que transforma req body en json
+import express from 'express'
 
 import taskRouter from './routes/taskRoutes'
-import hadNoCacheHeader from './infrastructure/middleware/http-middleware'
+import hadNoCacheHeader from './infrastructure/middleware/httpMiddleware'
 import cors from 'cors'
-import basicAuth from './infrastructure/middleware/basic-auth'
+import basicAuth from './infrastructure/middleware/basicAuth'
 
 const app = express()
 
